@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingRight="20dp"
+    tools:context=".armas_gladiador">
+
+
+    <Button
+        android:id="@+id/btnCrearGladiador"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:background="@drawable/fondo"
+        android:fontFamily="@font/olympus"
+        android:text="¡ CREAR !"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <Button
+        android:id="@+id/btnRegresar4"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:background="@drawable/fondo"
+        android:fontFamily="@font/olympus"
+        android:text="REGRESAR A CREACION"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="362dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053"
+        app:srcCompat="@drawable/fondo" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="186dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/olympus"
+        android:text="¡ SELECCiONA SU ARMA !"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ScrollView
+        android:layout_width="377dp"
+        android:layout_height="444dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCrearGladiador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/imgArma1"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="50dp"
+                    app:srcCompat="@drawable/arma_murmillo" />
+
+                <LinearLayout
+                    android:id="@+id/divArma1"
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitulo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/olympus"
+                        android:paddingBottom="2dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp">
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/danio" />
+
+                        <TextView
+                            android:id="@+id/txtAtaque1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/olympus"
+                            android:text="TextView"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView23"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/defensa" />
+
+                        <TextView
+                            android:id="@+id/txtDefen1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/olympus"
+                            android:text="TextView"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtHabili1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/olympus"
+                        android:text="TextView"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/imgArma2"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="50dp"
+                    app:srcCompat="@drawable/arma_hoplomachus" />
+
+                <LinearLayout
+                    android:id="@+id/divArma2"
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitulo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/olympus"
+                        android:paddingBottom="2dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/danio" />
+
+                        <TextView
+                            android:id="@+id/txtAtaque2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/olympus"
+                            android:text="TextView"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/defensa" />
+
+                        <TextView
+                            android:id="@+id/txtDefen2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/olympus"
+                            android:text="TextView"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtHabili2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/olympus"
+                        android:text="TextView"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/imgArma3"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="50dp"
+                    app:srcCompat="@drawable/arma_dimachaeri" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitulo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/olympus"
+                        android:paddingBottom="2dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/danio" />
+
+                        <TextView
+                            android:id="@+id/txtAtaque3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/olympus"
+                            android:text="TextView"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/defensa" />
+
+                        <TextView
+                            android:id="@+id/txtDefen3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/olympus"
+                            android:text="TextView"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtHabili3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/olympus"
+                        android:text="TextView"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgArma4"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="50dp"
+                    app:srcCompat="@drawable/arma_secutor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitulo4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/olympus"
+                        android:paddingBottom="2dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/danio" />
+
+                        <TextView
+                            android:id="@+id/txtAtaque4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/olympus"
+                            android:text="TextView"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/defensa" />
+
+                        <TextView
+                            android:id="@+id/txtDefen4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/olympus"
+                            android:text="TextView"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtHabili4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/olympus"
+                        android:text="TextView"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

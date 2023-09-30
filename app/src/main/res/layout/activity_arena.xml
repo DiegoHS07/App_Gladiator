@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Arena">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/coliseo_fondo"
+        android:layout_width="685dp"
+        android:layout_height="276dp"
+        android:src="@drawable/coliseo_gif"
+        app:layout_constraintBottom_toTopOf="@+id/btnCurar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toEndOf="@+id/gifJugadorArena"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="28dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/numVidaJugadorArena"
+        app:layout_constraintEnd_toStartOf="@+id/numVidaJugadorArena"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/gifJugadorArena"
+        app:layout_constraintTop_toTopOf="@+id/gifJugadorArena"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/corazon" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="28dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/numVidaEnemigoArena"
+        app:layout_constraintEnd_toStartOf="@+id/numVidaEnemigoArena"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/gifEnemigoArena"
+        app:layout_constraintTop_toTopOf="@+id/gifEnemigoArena"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/corazon" />
+
+    <Button
+        android:id="@+id/btnAtacar"
+        android:layout_width="169dp"
+        android:layout_height="79dp"
+        android:background="@drawable/fondo"
+        android:fontFamily="@font/olympus"
+        android:text="ATACAR"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
+
+    <Button
+        android:id="@+id/btnCurar"
+        android:layout_width="169dp"
+        android:layout_height="79dp"
+        android:background="@drawable/fondo"
+        android:fontFamily="@font/olympus"
+        android:text="CURARSE (3)"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:background="@drawable/fondo"
+        android:fontFamily="@font/olympus"
+        android:text="REGRESAR"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="341dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        app:srcCompat="@drawable/fondo" />
+
+    <ProgressBar
+        android:id="@+id/progressVidaJugador"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="147dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gifJugadorArena"
+        app:layout_constraintEnd_toEndOf="@+id/gifJugadorArena"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gifJugadorArena"
+        app:layout_constraintTop_toTopOf="@+id/gifJugadorArena"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <ProgressBar
+        android:id="@+id/progressVidaEnemigo"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="147dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gifEnemigoArena"
+        app:layout_constraintEnd_toEndOf="@+id/gifEnemigoArena"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gifEnemigoArena"
+        app:layout_constraintTop_toTopOf="@+id/gifEnemigoArena"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/olympus"
+        android:text="BATALLA !"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/nombreJugadorArena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F2B990"
+        android:fontFamily="@font/olympus"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gifJugadorArena"
+        app:layout_constraintEnd_toEndOf="@+id/gifJugadorArena"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="@+id/gifJugadorArena"
+        app:layout_constraintTop_toTopOf="@+id/gifJugadorArena"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/numVidaJugadorArena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="000"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gifJugadorArena"
+        app:layout_constraintEnd_toEndOf="@+id/gifJugadorArena"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="@+id/gifJugadorArena"
+        app:layout_constraintTop_toTopOf="@+id/gifJugadorArena"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/nombreEnemigoArena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F2B990"
+        android:fontFamily="@font/olympus"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gifEnemigoArena"
+        app:layout_constraintEnd_toEndOf="@+id/gifEnemigoArena"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="@+id/gifEnemigoArena"
+        app:layout_constraintTop_toTopOf="@+id/gifEnemigoArena"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/numVidaEnemigoArena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="000"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gifEnemigoArena"
+        app:layout_constraintEnd_toEndOf="@+id/gifEnemigoArena"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/gifEnemigoArena"
+        app:layout_constraintTop_toTopOf="@+id/gifEnemigoArena"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/resultadoBatalla"
+        android:layout_width="287dp"
+        android:layout_height="42dp"
+        android:background="@color/ic_launcher_background"
+        android:fontFamily="@font/olympus"
+        android:lineSpacingExtra="14sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/revHistorialMovi"
+        android:layout_width="373dp"
+        android:layout_height="137dp"
+        android:background="#F2FBD36F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifEnemigoArena"
+        android:layout_width="146dp"
+        android:layout_height="310dp"
+        android:src="@drawable/gladiador_enemigo_dimachaeri_1"
+        app:layout_constraintBottom_toTopOf="@+id/btnCurar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/gifJugadorArena"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.916" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifJugadorArena"
+        android:layout_width="146dp"
+        android:layout_height="310dp"
+        android:src="@drawable/gladiador_jugador_murmillo_1"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtacar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.916" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
